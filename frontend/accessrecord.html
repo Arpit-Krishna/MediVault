@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MediVault | Records</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="./createandaccess.js"></script>
+  <link rel="stylesheet" href="style/records1.css">
+</head>
+<body>
+    <div class="video">
+        <video autoplay autoplay loop muted plays-inline class="back">
+            <source src="m4.mp4" type="video/mp4">
+          </video>
+    <nav style=" width:100%; position:absolute; top:0; left:0; padding: 20px 8%;display:flex; justify-content:space-between;" >
+      <ul>
+        <li><a href="index.html"><img src="image1.png" height="35px" margin="0px" style="margin:-12px -5px"></a></li>
+        <li><a href="patientadd.html">Patients</a></li>
+        <li><a href="records.html">Create Records</a></li>
+        <li><a href="accessrecord.html">Access Records</a></li>
+      </ul>
+    </nav>
+
+<section>
+  <div class="records">
+    <h2>Access Records</h2>
+    <label>Patient ID:</label>
+    <input type="text" id="patient-id" required>
+
+   
+      <div id="personal-information">
+
+      </div>
+      <table>
+        <tbody id="info"></tbody>
+      </table>
+      <br>
+      <div id="record-information"></div>
+      <table>
+        <tbody id="record"></tbody>
+        
+      </table>
+    
+    <button id="deploy-record-button" onclick="accessrecord()">Access</button>
+</div>
+</section>
+
+</div>
+</body>
+
+</html>

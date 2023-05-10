@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MediVault | Records</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="./createandaccess.js"></script>
+  <link rel="stylesheet" href="style/records.css">
+</head>
+<body>
+  <div class="video">
+    <video autoplay autoplay loop muted plays-inline class="back">
+      <source src="m3.mp4" type="video/mp4">
+    </video>
+    <nav style="  width:100%; position:absolute; top:0; left:0; padding: 20px 8%;display:flex; justify-content:space-between;">
+      <ul>
+        <li><a href="index.html"><img src="image1.png" height="35px" margin="0px" style="margin:-12px -5px"></a></li>
+        <li><a href="patientadd.html">Patients</a></li>
+        <li><a href="records.html">Create Records</a></li>
+        <li><a href="accessrecord.html">Access Records</a></li>
+      </ul>
+    </nav>
+  <div class="container" style="padding:0px 200px; margin: 70px;">
+    <h1>Create Record</h1>
+    <form style="padding: 20px 80px;">
+      <input type="text" id="hos  pital-name" placeholder="Hospital Name" required>
+
+      <input type="text" id="p-id" placeholder="Patient ID" required>
+
+      <input type="text" id="doctor-name" placeholder="Doctor Name" required>
+
+      <input type="text" id="speciality" placeholder="Speciality" required>
+
+      <input type="text" id="referred-by" placeholder="Referred By" required>
+
+      <input type="text" id="complaints" placeholder="Complaint" required>
+
+      <input type="text" id="investigatin-advise" placeholder="Investigation Advise" required>
+
+      <input type="text" id="medicine-advice" placeholder="Medicine Advice" required>
+    
+    <button id="deploy-record-button" onclick="addrecord()">Deploy Record</button>
+    </form>
+  </div>
+  </div>
+</body>
+
+</html>
